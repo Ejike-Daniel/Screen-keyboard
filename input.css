@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --bg--color: rgba(214, 214, 214);
+    --bt--bg: rgb(0, 0, 0);
+    --box--shadow--color: #474343;
+    --white: #fff
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--bg--color);
+}
+
+.container {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+input {
+    width: 30rem;
+    height: 30dvh;
+}
+
+input:focus {
+    border: 0;
+}
+
+.keys-container {
+    
+}
+
+.row {
+    width: 100%;
+    height: 3.75rem;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five {
+    margin: 10px 0 0 0;
+}
+
+button {
+    all: unset;
+    color: rgb(255, 255, 255);
+    width: 3.438rem;
+    height: 3.438rem;
+    border: none;
+    background: var(--bg--color);
+    box-shadow: 5px 5px 10px var(--box--shadow--color), -5px -5px 10px var(--white);
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    border-radius: 20px;
+    outline: none;
+    margin-left: 0.5rem;
+    text-align: center;
+}
+
+button :active {
+    box-shadow: 10px 1px 2px #fff0f0, -1px -1px 2px var(--box--shadow--color);
+}
+
+.space {
+    width: 25rem;
+}
+
+.other {
+    width: 5.125rem;
+}
+
+.shift {
+    width: 9.375rem;
+}
+
+.enter {
+    width: 8.438rem;
+}
+
+.cap {
+    width: 6.25rem;
+}
+
+.backspace {
+    width: 7.188rem;
+}
+
+.slash {
+    width: 5.313rem;
+}
+
+.tab {
+    width: 5.313rem;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        background: rgba(223, 130, 8, 0.877);
+    }
+}
