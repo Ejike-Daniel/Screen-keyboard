@@ -8,8 +8,19 @@
     <link rel="stylesheet" href="input.css" />
   </head>
   <body>
+    <header>
+      <div class="theme-mode">
+        <input type="color" class="color-picker" />
+        <div class="toggle-container">
+          <div class="toggle-btn"></div>
+        </div>
+      </div>
+    </header>
     <div class="container">
-      <input type="text" id="display" />
+      <div>
+        <textarea class="display" id="" cols="30" rows="10"></textarea>
+      </div>
+
       <div class="keys-container">
         <div class="row one">
           <button>~</button>
@@ -24,12 +35,15 @@
           <button>9</button>
           <button>0</button>
           <button>-</button>
-          <button>=</button>
-          <button class="backspace">Backspace</button>
+          <button class="">=</button>
+          <button class="backspace mega-btn" data-key="backspace">
+            Backspace
+          </button>
         </div>
         <div class="row two">
-          <button class="tab">Tab</button>
+          <button class="tab mega-btn" data-key="tab">Tab</button>
           <button>Q</button>
+          <button>W</button>
           <button>E</button>
           <button>R</button>
           <button>T</button>
@@ -43,7 +57,10 @@
           <button class="slash">\</button>
         </div>
         <div class="row three">
-          <button class="caps">Caps</button>
+          <button class="caps mega-btn" data-key="caps">
+            <span>Caps Lock</span>
+            <div class="caps-on-indicator"></div>
+          </button>
           <button>A</button>
           <button>S</button>
           <button>D</button>
@@ -55,10 +72,10 @@
           <button>L</button>
           <button>;</button>
           <button>'</button>
-          <button class="enter">Enter</button>
+          <button class="enter mega-btn" data-key="enter">Enter</button>
         </div>
         <div class="row four">
-          <button class="shift">Shift</button>
+          <button class="shift mega-btn">Shift</button>
           <button>Z</button>
           <button>X</button>
           <button>C</button>
@@ -69,16 +86,16 @@
           <button>,</button>
           <button>.</button>
           <button>/</button>
-          <button class="shift">Shift</button>
+          <button class="shift mega-btn">Shift</button>
         </div>
         <div class="row five">
-          <button class="other">Ctrl</button>
-          <button class="other">Win</button>
-          <button class="other">Alt</button>
-          <button class="space">Space</button>
-          <button class="other">Ctrl</button>
-          <button class="other">Win</button>
-          <button class="other">Alt</button>
+          <button class="other ctrl mega-btn">Ctrl</button>
+          <button class="other window mega-btn">Win</button>
+          <button class="other alt mega-btn">Alt</button>
+          <button class="space mega-btn" data-key="space">Space</button>
+          <button class="other ctrl mega-btn">Ctrl</button>
+          <button class="other window mega-btn">Fn</button>
+          <button class="other alt mega-btn">Alt</button>
         </div>
       </div>
     </div>
